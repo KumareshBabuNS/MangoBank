@@ -1,2 +1,2 @@
 # MangoBank
-spring JPA REST APIs
+Building Open banking APIs using Spring Cloud framework.
