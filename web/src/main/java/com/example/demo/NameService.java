@@ -10,15 +10,16 @@ import org.springframework.web.client.RestTemplate;
  */
 @Service
 public class NameService {
-	private NameFeignClient nameFeignClient;
+	private static final String URL = "http://locahost:8002";
+	private RestTemplate rest;
 
-	public NameService(NameFeignClient nameFeignClient) {
-		this.nameFeignClient = nameFeignClient;
+
+	public NameService(RestTemplate rest) {
+		this.rest = rest;
 	}
 
 	public String getName() {
-		return nameFeignClient.getName();
-	}
+		return rest.getForObject(URL, String.class);	}
 
 	@FeignClient("name")
 	static interface NameFeignClient {

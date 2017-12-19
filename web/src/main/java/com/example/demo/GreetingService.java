@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @Service
 public class GreetingService {
-	private static final String URL = "http://greeting";
+	private static final String URL = "http://locahost:8001";
 	private RestTemplate rest;
 
 	public GreetingService(RestTemplate rest) {

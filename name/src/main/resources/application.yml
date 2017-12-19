@@ -1,3 +1,5 @@
 spring:
   application:
-    name: name
+    name: Santosh
+server:
+  port: 8002   # HTTP (Tomcat) port
