@@ -1,1 +1,6 @@
-Hello World
+#include<iostream.h>
+voidmain()
+{
+cout<<"Hello World";
+getch();
+}
